@@ -6,6 +6,9 @@
     <dimen name="editTextEmail">315dp</dimen>
     <dimen name="editTextSenha">315dp</dimen>
     <dimen name="buttonLogin">315dp</dimen>
+    <dimen name="backgroundLogin">8dp</dimen>
+    <dimen name="backgroundEdittext">8dp</dimen>
+
 
     
 </resources>
