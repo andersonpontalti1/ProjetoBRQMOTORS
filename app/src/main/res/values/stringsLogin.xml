@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BRQMotorsECC</string>
+    <string name="imageView">loginTextViewTitle</string>
+    <string name="textView"></string>
+    <string name="textView2">TextoSeuApp</string>
+    <string name="editText">Login_Email</string>
+    <string name="editText2">Login_Senha</string>
+    <string name="Button">Button_Login</string>
+    <string name="label">label_button</string>
+</resources>

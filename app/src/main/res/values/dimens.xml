@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageViewBRQ">300dp</dimen>
+    <dimen name="textViewBRQ2">315dp</dimen>
+    <dimen name="textViewAPP">286dp</dimen>
+    <dimen name="editTextEmail">315dp</dimen>
+    <dimen name="editTextSenha">315dp</dimen>
+    <dimen name="buttonLogin">315dp</dimen>
+
+    
+</resources>
