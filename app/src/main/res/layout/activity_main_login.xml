@@ -78,7 +78,7 @@
             android:layout_width="315dp"
             android:layout_height="60dp"
             android:layout_marginBottom="132dp"
-            android:background="@drawable/background_edittext"
+            android:background="@drawable/background_buttonlogin"
             android:text="@string/btn_Login"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
