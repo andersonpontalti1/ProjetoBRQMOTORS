@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cardView1">#0095FF</color>
+    <color name="cardView2">#884DFF</color>
+    <color name="btn_Continuar">#919191</color>
+    <color name="txt_Localização">#FFFFFFFF</color>
+    <color name="txt_Privacidade">#FF125AD3</color>
+</resources>

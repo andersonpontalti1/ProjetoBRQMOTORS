@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BRQMotorsECC</string>
+    <string name="textView">BRQ</string>
+    <string name="textViewAPP">Seu App de Viagens</string>
+    <string name="Login_Email">Email</string>
+    <string name="Login_Senha">Senha</string>
+    <string name="btn_Login">Login</string>
+    <string name="label">Não tem conta? Se Cadastre</string>
+    <string name="btn_privacidade">CONTINUAR</string>
+    <string name="txt_Permitirlocalizacao">Permitir acesso a sua localização</string>
+    <string name="txt_Permitirajuda">Precisamos disso para ajudar nas suas escolhas</string>
+    <string name="txt_ReadMore"><u>READ MORE</u></string>
+    <string name="txt_PermitirEmail">Deseja receber emails</string>
+    <string name="txt_PermitirSpam">Podemos encher sua caixa de emails com spams?</string>
+    <string name="txt_Privacidade">Privacidade</string>
+</resources>
