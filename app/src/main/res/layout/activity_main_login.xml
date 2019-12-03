@@ -12,7 +12,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageViewBRQ"
@@ -28,6 +28,7 @@
             android:id="@+id/textViewBRQ2"
             android:layout_width="315dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:text="@string/textView"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -40,6 +41,7 @@
             android:id="@+id/textViewAPP"
             android:layout_width="286dp"
             android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/backgroundLogin"
             android:text="@string/textViewAPP"
             android:textSize="32sp"
             app:layout_constraintEnd_toEndOf="@+id/textViewBRQ2"
@@ -51,9 +53,11 @@
             android:id="@+id/editTextEmail"
             android:layout_width="315dp"
             android:layout_height="60dp"
+            android:layout_marginTop="29dp"
             android:background="@drawable/background_login"
             android:hint="@string/Login_Email"
-            android:textAlignment="center"
+            android:paddingStart="20dp"
+            android:textAlignment="textStart"
             app:layout_constraintBottom_toTopOf="@+id/editTextSenha"
             app:layout_constraintEnd_toEndOf="@+id/textViewAPP"
             app:layout_constraintHorizontal_bias="0.0"
@@ -64,10 +68,11 @@
             android:id="@+id/editTextSenha"
             android:layout_width="315dp"
             android:layout_height="60dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/background_senha"
             android:hint="@string/Login_Senha"
-            android:textAlignment="center"
+            android:paddingStart="20dp"
+            android:textAlignment="textStart"
             app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/editTextEmail"
@@ -77,21 +82,20 @@
             android:id="@+id/buttonLogin"
             android:layout_width="315dp"
             android:layout_height="60dp"
-            android:layout_marginBottom="132dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/background_buttonlogin"
             android:text="@string/btn_Login"
             android:textColor="@android:color/background_light"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintHorizontal_bias="0.293"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/editTextSenha"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextSenha" />
 
         <ImageView
             android:id="@+id/imageViewSimb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:outlineSpotShadowColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/imageViewBRQ"
             app:layout_constraintEnd_toEndOf="@+id/imageViewBRQ"
@@ -123,6 +127,8 @@
             android:id="@+id/label_Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
             android:text="@string/label"
             android:textColor="#FF888888"
             android:textSize="20sp"
@@ -132,20 +138,13 @@
             app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
             app:layout_constraintVertical_bias="0.457" />
 
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="715dp" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="716dp" />
-
+            app:layout_constraintGuide_begin="726dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
