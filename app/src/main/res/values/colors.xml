@@ -6,4 +6,8 @@
     <color name="corForteBtn">#1058D1</color>
     <color name="colorAccent">#D81B60</color>
     <color name="azul">#D3D3D3</color>
+    <color name="button_login_color">#3C80F7</color>
+    <color name="button_login_stroke">#1058D1</color>
+    <color name="login_background_color">#777777</color>
+    <color name="white">#FFFFFF</color>
 </resources>

@@ -6,6 +6,7 @@
     <string name="Login_Senha">Senha</string>
     <string name="btn_Login">Login</string>
     <string name="label">Não tem conta? Se Cadastre</string>
+
     <string name="btn_privacidade">CONTINUAR</string>
     <string name="txt_Permitirlocalizacao">Permitir acesso a sua localização</string>
     <string name="txt_Permitirajuda">Precisamos disso para ajudar nas suas escolhas</string>
