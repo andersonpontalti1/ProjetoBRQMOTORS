@@ -15,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_login)
-
+        //açao transicao
         buttonLogin.setOnClickListener {
             val intent = Intent(baseContext, PrivacidadeActivity::class.java)
             startActivity(intent)
@@ -23,11 +23,3 @@ class LoginActivity : AppCompatActivity() {
 
     }
 }
-
-
-
-
-
-
-
-
