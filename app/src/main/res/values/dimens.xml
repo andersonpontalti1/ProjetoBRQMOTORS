@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageViewBRQ">300dp</dimen>
+    <dimen name="textViewBRQ2">315dp</dimen>
+    <dimen name="textViewAPP">286dp</dimen>
+    <dimen name="editTextEmail">315dp</dimen>
+    <dimen name="editTextSenha">315dp</dimen>
+    <dimen name="buttonLogin">315dp</dimen>
+    <dimen name="backgroundLogin">8dp</dimen>
+    <dimen name="backgroundEdittext">8dp</dimen>
+    <dimen name="button_login_radius">8dp</dimen>
+    <dimen name="button_login_stroke_width">2dp</dimen>
+    <dimen name="image_login">300dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="txtsize_32">32sp</dimen>
+    <dimen name="txtsize_18">18sp</dimen>
+    <dimen name="padding_txtinput_login">20dp</dimen>
+    <dimen name="default_height_60">60dp</dimen>
+    <dimen name="login_txtinput_email_margin_top">29dp</dimen>
+    <dimen name="defaut_margin_16">16dp</dimen>
+    <dimen name="defaut_margin_32">32dp</dimen>
+    <dimen name="txtsize_20">20sp</dimen>
+    <dimen name="defaut_magin_24">24dp</dimen>
+    <dimen name="default_margin_30">30dp</dimen>
+
+</resources>

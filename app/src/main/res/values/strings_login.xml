@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BRQMotorsECC</string>
+    <string name="textView">BRQ</string>
+    <string name="textViewAPP">Seu App de Viagens</string>
+    <string name="Login_Email">Email</string>
+    <string name="Login_Senha">Senha</string>
+    <string name="btn_Login">Login</string>
+    <string name="label">Nao Tem Conta? Se Cadastre</string>
+</resources>

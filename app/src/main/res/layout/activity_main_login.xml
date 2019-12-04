@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintBottom_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewBRQ"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_login"
+            android:scaleType="fitEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textViewBRQ2"
+            app:srcCompat="@drawable/top_photo" />
+
+        <TextView
+            android:id="@+id/textViewBRQ2"
+            style="@style/LoginTextView"
+            android:layout_marginTop="@dimen/margin_30"
+            android:text="@string/textView"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewBRQ"
+            app:layout_constraintBottom_toTopOf="@id/textViewAPP"/>
+
+        <TextView
+            android:id="@+id/textViewAPP"
+            style="@style/LoginTextView"
+            android:text="@string/textViewAPP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBRQ2"
+            app:layout_constraintBottom_toTopOf="@id/editTextEmail"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/LoginInput"
+            android:layout_marginTop="@dimen/login_txtinput_email_margin_top"
+            android:background="@drawable/background_txtinput_login"
+            android:hint="@string/Login_Email"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toTopOf="@+id/editTextSenha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAPP" />
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            style="@style/LoginInput"
+            android:layout_marginTop="@dimen/defaut_margin_16"
+            android:background="@drawable/background_txtinput_login"
+            android:hint="@string/Login_Senha"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintBottom_toTopOf="@id/buttonLogin"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/LoginInput"
+            android:layout_marginTop="@dimen/default_margin_30"
+            android:background="@drawable/background_buttonlogin"
+            android:text="@string/btn_Login"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSenha"
+            app:layout_constraintBottom_toTopOf="@id/label_Button"/>
+
+        <ImageView
+            android:id="@+id/imageViewSimb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_30"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBRQ"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBRQ"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/imagem" />
+
+        <TextView
+            android:id="@+id/label_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaut_margin_32"
+            android:layout_marginBottom="@dimen/defaut_magin_24"
+            android:text="@string/label"
+            android:textColor="#FF888888"
+            android:textSize="@dimen/txtsize_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
