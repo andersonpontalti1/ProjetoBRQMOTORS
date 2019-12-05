@@ -2,11 +2,11 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <corners android:radius="8dp"/>
-            <solid android:color="#3C80F7"/>
-            <stroke android:color="#1058D1" android:width="2dp"/>
-            <gradient android:startColor="#3C80F7"
-                android:endColor="#1058D1"/>
+            <corners android:radius="@dimen/button_login_radius"/>
+            <solid android:color="@color/button_login_color"/>
+            <stroke android:color="@color/button_login_stroke" android:width="@dimen/button_login_stroke_width"/>
+            <gradient android:startColor="@color/button_login_color"
+                android:endColor="@color/button_login_stroke"/>
         </shape>
     </item>
 </selector>
