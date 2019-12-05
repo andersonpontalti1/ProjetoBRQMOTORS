@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">BRQMotorsECC</string>
+
+    <string name="title1">"Bem Vindo"</string>
+    <string name="title2">"Escolha um veículo"</string>
+    <string name="title3">"Deixe como favorito"</string>
+
+    <string name="next">"Next"</string>
+    <string name="back">"Back"</string>
+    <string name="done">"Done"</string>
+    <string name="bla_bla_bla_bla">bla bla bla bla</string>
+
+
 </resources>
