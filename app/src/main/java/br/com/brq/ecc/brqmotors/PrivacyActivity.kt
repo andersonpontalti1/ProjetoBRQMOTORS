@@ -1,10 +1,9 @@
 package br.com.brq.ecc.brqmotors
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import br.com.brq.ecc.brqmotors.R.drawable.background_buttonpriva_desat
 import kotlinx.android.synthetic.main.activity_main_privacidade.*
 
 class PrivacyActivity : AppCompatActivity() {
@@ -13,14 +12,28 @@ class PrivacyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_privacidade)
+        initButtonOff()
+        swithActivityButton()
+    }
+
+    private fun swithActivityButton() {
         switch1.setOnClickListener {
-            var isLocaleChecked = switch1.isChecked
+            val isLocaleChecked = switch1.isChecked
             button.isEnabled = isLocaleChecked
+
             if (isLocaleChecked) {
+
+                button.background = getDrawable(R.drawable.background_buttonpriva)
                 Toast.makeText(baseContext, "Habilitado", Toast.LENGTH_LONG).show()
             } else {
+                button.background = getDrawable(background_buttonpriva_desat)
                 Toast.makeText(baseContext, "Desabilitado", Toast.LENGTH_LONG).show()
             }
         }
+    }
+
+    private fun initButtonOff() {
+        button.isEnabled = false
+        button.background = getDrawable(background_buttonpriva_desat)
     }
 }
