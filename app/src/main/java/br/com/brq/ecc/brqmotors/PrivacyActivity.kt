@@ -8,14 +8,12 @@ import kotlinx.android.synthetic.main.activity_main_privacidade.*
 
 class PrivacyActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_privacidade)
         initButtonOff()
         swithActivityButton()
     }
-
     private fun swithActivityButton() {
         switch1.setOnClickListener {
             val isLocaleChecked = switch1.isChecked
@@ -31,7 +29,6 @@ class PrivacyActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun initButtonOff() {
         button.isEnabled = false
         button.background = getDrawable(background_buttonpriva_desat)
