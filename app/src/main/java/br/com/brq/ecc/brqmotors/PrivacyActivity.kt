@@ -22,10 +22,10 @@ class PrivacyActivity : AppCompatActivity() {
             if (isLocaleChecked) {
 
                 button.background = getDrawable(R.drawable.background_buttonpriva)
-                Toast.makeText(baseContext, "Habilitado", Toast.LENGTH_LONG).show()
+
             } else {
                 button.background = getDrawable(background_buttonpriva_desat)
-                Toast.makeText(baseContext, "Desabilitado", Toast.LENGTH_LONG).show()
+
             }
         }
     }
