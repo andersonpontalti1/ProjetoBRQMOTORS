@@ -8,7 +8,7 @@
     <dimen name="buttonLogin">315dp</dimen>
     <dimen name="backgroundLogin">8dp</dimen>
     <dimen name="backgroundEdittext">8dp</dimen>
-    <dimen name="button_login_radius">8dp</dimen>
+    <dimen name="default_radius">8dp</dimen>
     <dimen name="button_login_stroke_width">2dp</dimen>
     <dimen name="image_login">300dp</dimen>
     <dimen name="margin_30">30dp</dimen>
@@ -41,7 +41,7 @@
     <dimen name="defaut_margin_72">72dp</dimen>
     <dimen name="defat_margin_26">26dp</dimen>
     <dimen name="defaut_margin_70">70dp</dimen>
-    <dimen name="defaut_margin_170">170dp</dimen>
+    <dimen name="defaut_margin_111">111dp</dimen>
     <dimen name="defaut_margin_width_179">179dp</dimen>
     <dimen name="defaut_margin_height_45">45dp</dimen>
     <dimen name="defaut_margin_15">15dp</dimen>
@@ -63,4 +63,8 @@
     <dimen name="defaut_margin_295">295dp</dimen>
     <dimen name="defaut_margin_36">36dp</dimen>
     <dimen name="defaut_margin_btn_118">118dp</dimen>
+    <dimen name="padding43">43dp</dimen>
+    <dimen name="padding4">4dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <dimen name="margin16">16dp</dimen>
 </resources>

@@ -10,4 +10,5 @@
     <color name="button_login_stroke">#1058D1</color>
     <color name="login_background_color">#777777</color>
     <color name="white">#FFFFFF</color>
+    <color name="card_purple_bg">#884DFF</color>
 </resources>
