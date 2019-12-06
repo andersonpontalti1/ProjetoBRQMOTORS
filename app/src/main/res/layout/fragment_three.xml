@@ -1,47 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".threeFragment"
+    tools:context=".ThreeFragment"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#1DAACC">
-
+    android:padding="@dimen/fundo"
+    android:background="@color/ColorFundo">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="150dp"
-        android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher_round" />
+        android:layout_width="@dimen/imagemwidth"
+        android:layout_height="@dimen/imagemheight"
+        android:src="@drawable/imagemtres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/title2"
-        android:textSize="26sp"
-        android:textColor="@color/colorAccent"/>
-
+        android:text="@string/intro_fragment3_title"
+        android:textSize="@dimen/texto1"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent" />/>
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/bla_bla_bla_bla"
-        android:textSize="18dp"
-        android:textColor="@color/colorAccent">
-
+        android:textSize="@dimen/texto2"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
     </TextView>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-
         <TextView
             android:id="@+id/slideThreeBack"
             android:layout_width="wrap_content"
@@ -49,11 +50,10 @@
             android:layout_gravity="bottom|start"
             android:layout_weight="1"
             android:text="@string/back"
-            android:textSize="20sp"
+            android:textSize="@dimen/texto3"
             android:textColor="@color/colorAccent"
             android:clickable="true"
             android:focusable="true"/>
-
         <TextView
             android:id="@+id/slideThreeNext"
             android:layout_width="wrap_content"
@@ -62,14 +62,10 @@
             android:gravity="bottom|end"
             android:layout_weight="1"
             android:text="@string/next"
-            android:textSize="20sp"
+            android:textSize="@dimen/texto3"
             android:textColor="@color/colorAccent"
             android:fontFamily="lato_light"
             android:clickable="true"
             android:focusable="true"/>
-
     </LinearLayout>
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

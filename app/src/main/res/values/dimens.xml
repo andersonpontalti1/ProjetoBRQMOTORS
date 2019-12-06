@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imagemwidth">400dp</dimen>
+    <dimen name="imagemheight">550dp</dimen>
+    <dimen name="fundo">16dp</dimen>
+    <dimen name="texto1">26sp</dimen>
+    <dimen name="texto2">18dp</dimen>
+    <dimen name="texto3">20sp</dimen>
+
+
+</resources>
