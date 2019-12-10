@@ -1,9 +1,8 @@
 package br.com.brq.ecc.brqmotors
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import br.com.brq.ecc.brqmotors.R.drawable.background_buttonpriva_desat
+import br.com.brq.ecc.brqmotors.R.drawable.background_buttonpriva_desabled
 import kotlinx.android.synthetic.main.activity_main_privacidade.*
 
 class PrivacyActivity : AppCompatActivity() {
@@ -24,13 +23,13 @@ class PrivacyActivity : AppCompatActivity() {
                 button.background = getDrawable(R.drawable.background_buttonpriva)
 
             } else {
-                button.background = getDrawable(background_buttonpriva_desat)
+                button.background = getDrawable(background_buttonpriva_desabled)
 
             }
         }
     }
     private fun initButtonOff() {
         button.isEnabled = false
-        button.background = getDrawable(background_buttonpriva_desat)
+        button.background = getDrawable(background_buttonpriva_desabled)
     }
 }
