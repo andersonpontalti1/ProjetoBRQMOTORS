@@ -13,7 +13,7 @@ class PrivacyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_privacidade)
         initButtonOff()
         swithActivityButton()
-    }
+    }// açao do botao swith
     private fun swithActivityButton() {
         switch1.setOnClickListener {
             val isLocaleChecked = switch1.isChecked

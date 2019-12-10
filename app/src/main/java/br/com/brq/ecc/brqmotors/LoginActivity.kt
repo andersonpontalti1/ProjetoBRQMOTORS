@@ -15,9 +15,7 @@ class LoginActivity : AppCompatActivity () {
             val intent = Intent(baseContext, PrivacyActivity::class.java)
             startActivity(intent)
         }
-        buttonLogin.setOnClickListener {
-            val intent = Intent(baseContext,PrivacyActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 }
+
