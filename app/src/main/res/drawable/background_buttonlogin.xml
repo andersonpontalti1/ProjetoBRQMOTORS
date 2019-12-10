@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/button_login_radius"/>
+        <solid android:color="@color/button_login_color"/>
+        <stroke android:color="@color/button_login_stroke" android:width="@dimen/button_login_stroke_width"/>
+<gradient android:startColor="@color/button_login_color"
+    android:endColor="@color/button_login_stroke"/>
+    </shape>
+</item>
+</selector>
