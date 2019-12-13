@@ -1,5 +1,7 @@
 package br.com.brq.ecc.brqmotors
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.brq.ecc.brqmotors.R.drawable.background_buttonpriva_desabled
@@ -12,7 +14,24 @@ class PrivacyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_privacidade)
         initButtonOff()
         swithActivityButton()
-    }// açao do botao swith
+        setupReadMoreListener()
+
+    }
+
+    private fun setupReadMoreListener() {
+        redemore_blue.setOnClickListener {
+            startReadMoreIntent()
+        }
+        redemore_purple.setOnClickListener { startReadMoreIntent() }
+    }
+
+    private fun startReadMoreIntent() {
+        val url = "http://www.brq.com/"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
+    }
+
     private fun swithActivityButton() {
         switch1.setOnClickListener {
             val isLocaleChecked = switch1.isChecked
@@ -28,6 +47,7 @@ class PrivacyActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun initButtonOff() {
         button.isEnabled = false
         button.background = getDrawable(background_buttonpriva_desabled)

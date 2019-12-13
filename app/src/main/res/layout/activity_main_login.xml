@@ -47,7 +47,7 @@
             android:contentDescription="@string/txt_app_de_viagens"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewBRQ2"
+            app:layout_constraintTop_toBottomOf="@id/textViewBRQ2"
             app:layout_constraintBottom_toTopOf="@id/editTextEmail"/>
 
         <EditText
@@ -59,23 +59,23 @@
             android:textAlignment="textStart"
             android:contentDescription="@string/login_email"
             android:focusable="true"
-            app:layout_constraintBottom_toTopOf="@+id/editTextSenha"
+            app:layout_constraintBottom_toTopOf="@id/editTextPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewAPP" />
+            app:layout_constraintTop_toBottomOf="@id/textViewAPP" />
 
         <EditText
-            android:id="@+id/editTextSenha"
+            android:id="@+id/editTextPassword"
             style="@style/LoginInput"
             android:layout_marginTop="@dimen/defaut_margin_16"
             android:background="@drawable/background_txtinput_login"
             android:hint="@string/Login_Senha"
             android:textAlignment="textStart"
-            android:contentDescription="@string/Login_Senha"
+            android:contentDescription="@string/login_password"
             android:focusable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintTop_toBottomOf="@id/editTextEmail"
             app:layout_constraintBottom_toTopOf="@id/buttonLogin"/>
 
         <Button
@@ -89,7 +89,7 @@
             android:focusable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextSenha"
+            app:layout_constraintTop_toBottomOf="@id/editTextPassword"
             app:layout_constraintBottom_toTopOf="@id/label_Button"/>
 
         <ImageView
@@ -99,8 +99,8 @@
             android:layout_marginTop="@dimen/default_margin_30"
             android:contentDescription="@string/icone_Brq"
             android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="@+id/imageViewBRQ"
-            app:layout_constraintEnd_toEndOf="@+id/imageViewBRQ"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewBRQ"
+            app:layout_constraintEnd_toEndOf="@id/imageViewBRQ"
             app:layout_constraintHorizontal_bias="0.105"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -121,7 +121,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+            app:layout_constraintTop_toBottomOf="@id/buttonLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

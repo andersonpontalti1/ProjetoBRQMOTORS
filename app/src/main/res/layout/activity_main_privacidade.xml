@@ -80,6 +80,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/redemore_blue"
                 android:layout_width="@dimen/txt_view_width_93"
                 android:layout_height="@dimen/txt_input_height"
                 android:layout_marginStart="@dimen/defaut_margin_22"
@@ -133,14 +134,17 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/redemore_purple"
+                android:autoLink="all"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="@dimen/txt_input_red_more"
                 android:layout_height="@dimen/txt_input_height"
                 android:layout_marginStart="@dimen/txt_input_height"
                 android:layout_marginTop="@dimen/defaut_margin_124"
                 android:layout_marginEnd="@dimen/defaut_margin_276"
                 android:layout_marginBottom="@dimen/defaut_margin_16"
-                android:text="READ MORE"
+                android:text="@string/read_more"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_13"
                 app:layout_constraintBottom_toBottomOf="parent"

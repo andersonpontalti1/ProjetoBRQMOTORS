@@ -22,4 +22,5 @@
     <string name="txt_PermitirEmail">Deseja receber emails</string>
     <string name="txt_PermitirSpam">Podemos encher sua caixa de emails com spams?</string>
     <string name="txt_Privacidade">Privacidade</string>
+    <string name="read_more">READ MORE</string>
 </resources>
