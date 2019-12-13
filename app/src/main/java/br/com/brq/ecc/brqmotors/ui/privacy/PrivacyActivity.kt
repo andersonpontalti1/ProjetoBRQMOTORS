@@ -1,9 +1,10 @@
-package br.com.brq.ecc.brqmotors
+package br.com.brq.ecc.brqmotors.ui.privacy
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.com.brq.ecc.brqmotors.R
 import br.com.brq.ecc.brqmotors.R.drawable.background_buttonpriva_desabled
 import kotlinx.android.synthetic.main.activity_main_privacidade.*
 
