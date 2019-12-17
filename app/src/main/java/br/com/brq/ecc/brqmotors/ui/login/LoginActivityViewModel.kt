@@ -9,7 +9,7 @@ class LoginActivityViewModel(val repository: UserRepository): ViewModel() {
 
     }
 
-    fun verifyUserDate(email: String, password: String) {
+    fun verifyUserData(email: String, password: String) {
         if(userInputIsValid(email, password)){
 
             repository.checkUserRegister(email, password)
@@ -20,4 +20,5 @@ class LoginActivityViewModel(val repository: UserRepository): ViewModel() {
     private fun userInputIsValid(email: String, password: String): Boolean {
         return true
     }
+
 }
