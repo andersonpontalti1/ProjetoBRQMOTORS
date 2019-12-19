@@ -73,6 +73,7 @@
             android:textAlignment="textStart"
             android:contentDescription="@string/login_password"
             android:focusable="true"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editTextEmail"

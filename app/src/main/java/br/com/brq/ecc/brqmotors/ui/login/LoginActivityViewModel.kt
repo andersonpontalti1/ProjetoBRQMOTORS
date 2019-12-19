@@ -1,24 +1,85 @@
 package br.com.brq.ecc.brqmotors.ui.login
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.brq.ecc.brqmotors.model.repository.UserRepository
+import kotlinx.coroutines.*
+import kotlin.coroutines.CoroutineContext
 
-class LoginActivityViewModel(val repository: UserRepository): ViewModel() {
+class LoginActivityViewModel(val repository: UserRepository) : ViewModel(), CoroutineScope {
+    // Coroutine's background job
+    private val job = Job()
+    // Define default thread for Coroutine as Main and add job
+    override val coroutineContext: CoroutineContext = job + Dispatchers.Main
 
-    fun initializeDatabase(){
+    private val userExists = MutableLiveData<Boolean>()
+    private val validationText = MutableLiveData<String>()
 
-    }
-
-    fun verifyUserData(email: String, password: String) {
-        if(userInputIsValid(email, password)){
-
-            repository.checkUserRegister(email, password)
+    fun register() {
+        launch {
+            withContext(Dispatchers.IO) {
+                repository.registerUser()
+            }
         }
     }
 
-    //TODO("Anderson vai fazer depois")
-    private fun userInputIsValid(email: String, password: String): Boolean {
-        return true
+    fun verifyUserData(email: String, password: String) {
+
+        val validation = validateUserData(email, password)
+
+        if (validation.isEmpty()) {
+            launch {
+                val userIsVerifyData = withContext(Dispatchers.IO) {
+                    repository.checkUserRegister(email, password)
+                }
+                userExists.postValue(userIsVerifyData)
+            }
+        } else {
+                validationText.postValue(validation)
+
+        }
+
     }
 
+    fun getUserExistLiveData(): LiveData<Boolean> {
+        return userExists
+    }
+
+    fun getValidationTextLiveData(): LiveData<String> {
+        return validationText
+    }
+
+    private fun validateUserData(email: String, password: String): String {
+        return CheckFields()
+            .checkFieldsLoginUser(
+                email,
+                password
+            )
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

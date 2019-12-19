@@ -22,5 +22,7 @@ val appModules = module {
 
     single { UserRepository(userDao = get()) }
 
-    viewModel { LoginActivityViewModel(repository = get()) }
+    viewModel {
+        LoginActivityViewModel(repository = get())
+    }
 }
