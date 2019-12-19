@@ -4,9 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_onboarding"
     tools:context=".OnboardingActivity">
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width = "match_parent"
-        android:layout_height = "match_parent"/>
+        android:layout_height = "match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/slideOneNext"
+        android:layout_width="@dimen/button_width_onboard"
+        android:layout_height="@dimen/button_height_onboard"
+        android:scaleType="fitCenter"
+        android:layout_gravity="bottom|end"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="bottom|end"
+        android:padding="@dimen/padding_onboard"
+        android:layout_marginBottom="@dimen/defaut_margin_62"
+        android:layout_marginEnd="@dimen/margin_30"
+        android:src="@drawable/ic_arrow_right"
+        android:background="@drawable/background_button_onboard_next"
+        android:textSize="@dimen/texto3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/layout_40"
+        android:layout_height="@dimen/layout_40"
+        android:text="SKIP"
+        android:textColor="@color/colorbrancoletra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/layout_marginTop_onboard"
+        android:layout_marginEnd="@dimen/layout_marginEnd_onboard"
+        android:layout_marginStart="@dimen/layout_marginStart_onboard"
+        android:layout_marginBottom="@dimen/layout_marginBottom_onboard"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/text_margin_top"
+        android:layout_height="@dimen/text_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/view_marginBottom_onboard"
+        android:layout_marginStart="@dimen/marginStart1_onboard"
+        android:background="@drawable/dots_indicator_sim"/>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/text_margin_top"
+        android:layout_height="@dimen/text_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/view_marginBottom_onboard"
+        android:layout_marginStart="@dimen/marginStart2_onboard"
+        android:background="@drawable/dots_indicator_nao"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="@dimen/text_margin_top"
+        android:layout_height="@dimen/text_margin_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/view_marginBottom_onboard"
+        android:layout_marginStart="@dimen/marginStart3_onboard"
+        android:background="@drawable/dots_indicator_nao"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,22 +19,7 @@ public class ThreeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_three, container, false);
-
         viewPager=getActivity().findViewById(R.id.viewPager);
-        next=view.findViewById(R.id.slideThreeBack);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(2);
-            }
-        });
-        back=view.findViewById(R.id.slideThreeBack);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(1);
-            }
-        });
         return view;
     }
 }

@@ -1,9 +1,7 @@
 package br.com.brq.ecc.brqmotors;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 public class IntroAdapter extends FragmentPagerAdapter {
     public IntroAdapter( FragmentManager fm) {
         super (fm);

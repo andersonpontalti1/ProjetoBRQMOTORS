@@ -1,5 +1,6 @@
 package br.com.brq.ecc.brqmotors
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.brq.ecc.brqmotors.R.drawable.background_buttonpriva_desabled
@@ -10,9 +11,18 @@ class PrivacyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_privacidade)
-        initButtonOff()
+        //initButtonOff()
         swithActivityButton()
+        setupBtnContinue()
     }// açao do botao swith
+
+    private fun setupBtnContinue() {
+        button.setOnClickListener {
+            startActivity(Intent(this, OnboardingActivity::class.java))
+
+        }
+    }
+
     private fun swithActivityButton() {
         switch1.setOnClickListener {
             val isLocaleChecked = switch1.isChecked

@@ -4,9 +4,7 @@
     <string name="intro_fragment2_title">"Escolha um veículo"</string>
     <string name="intro_fragment3_title">"Deixe como favorito"</string>
     <string name="next">"Next"</string>
-    <string name="back">"Back"</string>
-    <string name="done">"Done"</string>
-    <string name="bla_bla_bla_bla">bla bla bla bla</string>
+    <string name="textos">Coventry is a city with a thousand years of history that has plenty to offer the visiting tourist.</string>
 
     <string name="textView">BRQ</string>
     <string name="textViewAPP">Seu App de Viagens</string>
