@@ -3,9 +3,9 @@
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/default_radius"/>
-            <solid android:color="@color/button_login_color"/>
+            <solid android:color="@color/light_blue"/>
             <stroke android:color="@color/button_login_stroke" android:width="@dimen/button_login_stroke_width"/>
-            <gradient android:startColor="@color/button_login_color"
+            <gradient android:startColor="@color/light_blue"
                 android:endColor="@color/button_login_stroke"/>
         </shape>
     </item>
