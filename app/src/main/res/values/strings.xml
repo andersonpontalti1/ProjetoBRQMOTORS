@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">BRQMotorsECC</string>
+    <string name="intro_fragment1_title">"Bem Vindo"</string>
+    <string name="intro_fragment2_title">"Escolha um veículo"</string>
+    <string name="intro_fragment3_title">"Deixe como favorito"</string>
+    <string name="next">"Next"</string>
+    <string name="textos">Coventry is a city with a thousand years of history that has plenty to offer the visiting tourist.</string>
+
     <string name="textView">BRQ</string>
     <string name="textViewAPP">Seu App de Viagens</string>
     <string name="Login_Email">Email</string>
@@ -14,7 +20,6 @@
     <string name="login_password">Campo senha</string>
     <string name="btn_login">Botao login</string>
     <string name="label_cadastre">Nao tem conta? Se cadastre</string>
-
     <string name="btn_privacidade">CONTINUAR</string>
     <string name="txt_Permitirlocalizacao">Permitir acesso a sua localização</string>
     <string name="txt_Permitirajuda">Precisamos disso para ajudar nas suas escolhas</string>
@@ -22,5 +27,7 @@
     <string name="txt_PermitirEmail">Deseja receber emails</string>
     <string name="txt_PermitirSpam">Podemos encher sua caixa de emails com spams?</string>
     <string name="txt_Privacidade">Privacidade</string>
+
     <string name="read_more">READ MORE</string>
+
 </resources>

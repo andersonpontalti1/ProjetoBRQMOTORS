@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="imagemwidth">160.07dp</dimen>
+    <dimen name="imagemheight">300dp</dimen>
+    <dimen name="textwidth">210dp</dimen>
+    <dimen name="textheight">48dp</dimen>
+    <dimen name="text_margin_top">20dp</dimen>
+    <dimen name="imagem_margin_top">65.33dp</dimen>
+    <dimen name="button_width_onboard">85dp</dimen>
+    <dimen name="button_height_onboard">60dp</dimen>
+    <dimen name="padding_onboard">18dp</dimen>
+    <dimen name="layout_40">40dp</dimen>
+    <dimen name="layout_marginTop_onboard">26.67dp</dimen>
+    <dimen name="layout_marginEnd_onboard">22dp</dimen>
+    <dimen name="layout_marginStart_onboard">209.33dp</dimen>
+    <dimen name="layout_marginBottom_onboard">504dp</dimen>
+    <dimen name="view_marginBottom_onboard">81dp</dimen>
+    <dimen name="marginStart1_onboard">30dp</dimen>
+    <dimen name="marginStart2_onboard">66dp</dimen>
+    <dimen name="marginStart3_onboard">99dp</dimen>
+
+    <dimen name="fundo">16dp</dimen>
+    <dimen name="texto1">26sp</dimen>
+    <dimen name="texto2">18dp</dimen>
+    <dimen name="texto3">20sp</dimen>
+
     <dimen name="imageViewBRQ">300dp</dimen>
     <dimen name="textViewBRQ2">315dp</dimen>
     <dimen name="textViewAPP">286dp</dimen>
@@ -67,4 +91,5 @@
     <dimen name="padding4">4dp</dimen>
     <dimen name="padding16">16dp</dimen>
     <dimen name="margin16">16dp</dimen>
+    <dimen name="radius_30">30dp</dimen>
 </resources>
