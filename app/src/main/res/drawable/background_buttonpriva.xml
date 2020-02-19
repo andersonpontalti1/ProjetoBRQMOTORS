@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <corners android:radius="@dimen/default_radius"/>
-            <solid android:color="@color/light_blue"/>
-            <stroke android:color="@color/button_login_stroke" android:width="@dimen/button_login_stroke_width"/>
-            <gradient android:startColor="@color/light_blue"
-                android:endColor="@color/button_login_stroke"/>
-        </shape>
-    </item>
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/default_radius"/>
+                <solid android:color="@color/light_blue"/>
+                <stroke android:color="@color/button_login_stroke" android:width="@dimen/button_login_stroke_width"/>
+                <gradient android:startColor="@color/light_blue"
+                    android:endColor="@color/button_login_stroke"/>
+            </shape>
+        </item>
 </selector>
