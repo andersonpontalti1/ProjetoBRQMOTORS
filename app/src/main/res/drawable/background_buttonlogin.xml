@@ -8,5 +8,6 @@
 <gradient android:startColor="@color/light_blue"
     android:endColor="@color/button_login_stroke"/>
     </shape>
+
 </item>
 </selector>
